@@ -1,0 +1,16 @@
+Preporuka:
+1. Za sve stranice sajta, koristi se jedan CSS fajl, svi selektori i pravila za sve stranice.
+2. CSS za resonsive design u posebnom CSS fajlu, ucitava na sve stranice
+3. Logo, slika koja je dozvoljena da bude PNG
+4. png je tezi od jpg, i zato ga ne koristiti
+5. PNG postoji samo zato sto moze da ima transparentnu pozadinu
+6. JPG nikada u originalu nego uvek obradjeno sa SaveForWeb
+7. Velikse slike ne budu preko 350K, a male preko 5K
+8.https://photoshoponline.pro/online-photoshop/
+9. Jako bitno koristiti web-fonts i web-icons
+10. Ako se koristi ikonice, web-icons (vise slika na jednoj slici)
+11. Obavezno praviti formu na nekoj stranici
+12. Obavezno raditi validaciju forme
+13. Obavezno staviti efekat animacije (jQuery)
+14. Imati neki eksterni sadrzaj (youtube, googlemap, ...)
+15.Obavezno imati stranicu O autoru, u meniju

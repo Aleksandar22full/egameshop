@@ -1,0 +1,594 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  width:100%;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    position: relative;
+}
+
+.logo img {
+    width: 100px;
+}
+
+ul.meni {
+    display: flex;
+    width: calc(70% - 200px);
+    overflow: hidden;
+}
+
+.logo {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+.gornji-header {
+    height: 40px;
+    background: #2e2e2e;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+ul.meni li {
+    list-style-type: none;
+    line-height: 100px;
+    padding: 0 15px;
+}
+
+ul.meni li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+ul.meni li a:hover{
+	color: #c0281b;
+}
+div.logo a {
+    width: 100px;
+}
+
+ul.meni li a.aktivan {
+    color: #c0281b;
+}
+div.pretraga {width: 30%;text-align: right;line-height: 100px;position: relative;padding-right: 15px;}
+
+input.unos-pretrage {
+    padding: 12px;
+    width: 60%;
+    border-radius: 50px;
+    background-color: #eee;
+    border: none;
+}
+
+button.pretraga-dugme {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: #ee3324;
+    border: none;
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    margin: auto;
+    right: 22px;
+    cursor: pointer;
+}
+
+input.unos-pretrage:focus {
+    outline: none;
+}
+
+div.burger{
+	display:none;
+}
+
+@media only screen and (max-width: 800px){
+	ul.meni{
+		display: none;
+	}
+    div.pretraga{
+    	display:none;
+    }
+    div.burger{
+    	display:block;
+    }
+    div.detalji-ponude{
+        position:relative;
+        width:100%;
+        height:400px;
+    }
+    .top-ponuda img{
+        display:none;
+    }
+    .panel2 .desno, .panel2 .levo{
+        width:100%!important;
+        text-align:left;
+    }
+    .panel2 .desno .forme{
+        float:left;
+    }
+    .panel2 .forme{
+        width:95%;
+    }
+    .panel2 .desno button{
+        float: right!important;
+    }
+    .panel2 .levo:after {content: "";height: 1px!important;width: 95%!important;background: #dfdfdf!important;position: absolute;bottom: -15px!important;left: 0!important;}
+
+}
+.burger-opcije {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1d1d1d;
+    z-index: 2;
+}
+
+.burger {
+    line-height: 100px;
+    font-size: 35px;
+    width: calc(100% - 200px);
+    text-align: right;
+    padding-right: 40px;
+}
+
+.burger a {
+    color: #1d1d1d;
+}
+
+.burger-meni {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0e0e0ede;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+
+ul.burger-lista {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 3;
+}
+
+ul.burger-lista li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #dadada;
+    font-size: 20px;
+}
+ul.burger-lista li a:hover {
+	color: red;
+}
+ul.burger-lista li a.aktivan {
+    color: red;
+}
+.prikazi{
+  display:table;
+}
+a.skloni-meni {
+    position: absolute;
+    right: 10px;
+    font-size: 31px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    top: 10px;
+}
+.levo, .desno {
+    width: 50%;
+    position: relative;
+}
+
+.levo {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.desno {
+    text-align: right;
+}
+
+.gornji-header a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+a.twitter {
+    color: #00acee;
+}
+
+a.facebook {
+    color: #3b5998;
+}
+
+div.levo a {
+    font-size: 17px;
+}
+
+a.instagram i {
+    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.top-ponuda img {height: inherit;width: inherit;}
+
+.top-ponuda{
+    position:relative;
+    max-height: 400px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+}
+.detalji-ponude {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    background: #1d1d1d9c;
+    text-align: left;
+}
+
+div.naslov-ponude {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    height: 75px;
+    margin-left: 20px;
+}
+
+ul.tacke-ponude {
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 50px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.kupi-ponuda {
+    position: relative;
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    height: 30%;
+}
+
+.kupi-ponuda button, .ponuda button {
+    background: #de2e21;
+    border: none;
+    color: white;
+    width: 35%;
+    font-weight: 100;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 30px;
+    left: 20px;
+}
+
+.kupi-ponuda i {
+    margin-right: 10px;
+}
+div.subnaslov-ponude {
+    color: #ff7166;
+    font-size: 0.7em;
+    position: relative;
+    vertical-align: middle;
+}
+
+.naslovi {
+    height: 30%;
+    background: #1d1d1d8c;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+div.ponuda-detalji {
+    height: 40%;
+    background: #1d1d1d26;
+    display: table;
+    width: 100%;
+}
+
+span.cena-ponude {position: absolute;margin: auto;top: 0;bottom: 0;height: 25px;left: 45%;}
+
+.ostale-ponude {
+    background: #fbfbfb;
+    width: calc(100% - 28px);
+    box-shadow: 0 0 5px black;
+    padding: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.detalji-pon {text-align: center;color: #333333;position: relative;}
+
+.ponuda {
+    width: 150px;
+    text-align: center;
+    background: #efefef;
+    padding: 10px 0;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 14px;
+    margin-right: 12px;
+}
+
+.ponuda img {
+    width: 90px;
+}
+
+.cena-igre {
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #de2e21;
+    color: white;
+    border-bottom-left-radius: 50%;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.ponuda button {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.ime-igre {
+    margin-bottom: 5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.promo {
+    margin-bottom: 20px;
+    background: #ee3324;
+    color: #ffffff;
+    box-shadow: 0 0 5px #3f3f3f85;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.promo-banner {
+    width: 100%;
+    box-shadow: 0 0 5px black;
+    max-height: 270px;
+}
+
+.footer {
+    background: #2e2e2e;
+    line-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    bottom: 25px;
+}
+
+ul.footer-stavke {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.footer-stavke li {
+    width: 100%;
+    position: relative;
+}
+
+.footer-stavke li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+.footer-stavke li:after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #5f5f5f;
+    top: 17.5px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.da-se-zna {
+    /* width: 200px; */
+    color: #747474;
+    text-align: center;
+}
+
+.subfooter {
+    background: #414141;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.panel {
+    width: calc(100% - 68px);
+    background: white;
+    padding: 39px;
+}
+
+.naslov {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.forme input {
+    margin-bottom: 15px;
+    background: #eeeeee;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #d8d8d8;
+}
+
+.panel2 {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input:focus {
+    outline: none;
+}
+
+.forme input:focus {
+    border-bottom-color: #de2e21!important;
+}
+
+button.login-button {
+    border: none;
+    background: #ee3324;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    cursor: pointer;
+    float: right;
+    margin-right: -20px;
+}
+
+.forme {
+    width: 75%;
+}
+
+.forme a {
+    color: #dc2f21;
+    font-size: 15px!important;
+    top: 10px;
+    position: relative;
+}
+.desno .forme {margin-right: 21px;position: relative;float: right;}
+
+.desno button.login-button {
+    float: left;
+}
+
+.panel2 .naslov {
+    margin-bottom: 20px;
+}
+
+.panel2 .levo:after {content: "";height: 100%;width: 1px;background: #dfdfdf;position: absolute;right: -2px;bottom: 0;}
+
+.panel2 .levo, .panel2 .desno {
+    margin-bottom: 20px;
+}
+.igre-zanr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.panel2 img {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+}
+
+.onama {
+    text-align: left;
+    padding: 30px;
+}
+
+.onama p {
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+input.success {
+    border-color: green;
+}
+
+input.err {
+    border-color: red;
+}
+span.error {
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    display: none;
+}
+
+span.display{
+	display:block;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+.filler {
+    height: 80px;
+}
